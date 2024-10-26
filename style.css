@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./oggy.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 600px; /* Increased for better layout */
+    height: auto; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.header {
+    background-color: #a98660;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.chat-list {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.people-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.person-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.person-item:hover {
+    background: #e7f1ff;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.last-message {
+    color: #888;
+    font-size: 14px;
+}
+
+.chat-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Adds space between chat list and sound container */
+}
+
+.input-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns select and button */
+}
+
+#petType {
+    flex: 1; /* Allow select to take up available space */
+    margin-right: 10px; /* Space between select and button */
+}
+
+#sendSound {
+    background-color: #a98660; /* Match header color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendSound:hover {
+    background-color: #8a6a50; /* Darker shade on hover */
+}

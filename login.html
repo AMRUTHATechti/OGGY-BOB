@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Oggy and Bob's Talks - Login</title>
+    <meta name="description" content="Log in to Oggy's and Bob's app to manage your cats and dogs effortlessly!" />
+    <meta name="keywords" content="Oggy, Bob, Cats, Dogs, Login, Animal Management App" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./oggy.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #003366;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-wrapper {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: #003366;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #003366;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #003366;
+            border-radius: 5px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+        }
+        .login-btn {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .login-btn:hover {
+            background-color: #005699;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-screen">
+            <div class="header">
+                <h1>Welcome to Oggy and Bob's App!</h1>
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required />
+            </div>
+            <div class="btn-group">
+                <button class="login-btn" onclick="login()">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                window.location.href = 'chat.html';
+            } else {
+                alert('Please enter both username and password.');
+            }
+        }
+    </script>
+</body>
+</html>

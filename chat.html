@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oggy and Bob - Chat App</title>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1 class="app-title">Oggy and Bob</h1>
+            <img src="profile-icon.png" alt="Profile Icon" class="profile-icon" />
+        </header>
+
+        <main class="chat-list">
+            <ul class="people-list">
+                <li class="person-item">
+                    <div class="user-info">
+                        <span class="user-name">Alice</span>
+                        <span class="last-message"></span>
+                    </div>
+                </li>
+                <li class="person-item">
+                    <div class="user-info">
+                        <span class="user-name">Bob</span>
+                        <span class="last-message"></span>
+                    </div>
+                </li>
+                <li class="person-item">
+                    <div class="user-info">
+                        <span class="user-name">Charlie</span>
+                        <span class="last-message"></span>
+                    </div>
+                </li>
+                <li class="person-item">
+                    <div class="user-info">
+                        <span class="user-name">Daisy</span>
+                        <span class="last-message"></span>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <div class="chat-container">
+            <h1 class="w3-center w3-animate-center">OGGY AND BOB</h1>
+            <div id="chatArea"></div>
+            
+            <div class="input-area">
+                <select id="petType">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+                <button id="sendSound">Send Sound</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
