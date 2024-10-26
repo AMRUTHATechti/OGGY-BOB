@@ -40,8 +40,8 @@ Login page where enter user name and password
 ![OGGY BOB_2](https://github.com/user-attachments/assets/96734e12-c33b-4b87-aced-d690a575f7e3)
 Homepage
 
-![Screens![OGGY BOB_3](https://github.com/user-attachments/assets/5745ca52-dbf9-4199-a18e-878bc694e7e3)
-hot3] Chating
+!![OGGY BOB_3](https://github.com/user-attachments/assets/5745ca52-dbf9-4199-a18e-878bc694e7e3)
+Chating
 
 
 
